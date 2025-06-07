@@ -1,6 +1,6 @@
 <div align="center">
 
-![image](https://github.com/user-attachments/assets/c71c1da2-2e24-4b2e-8741-437ebc8bfeb8)
+![image](https://github.com/user-attachments/assets/7a83645e-9fd5-4571-b76a-609279a63ed1)
 ![image](https://github.com/user-attachments/assets/f88408b8-8274-4321-874c-eed349124e24)
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/FrosSky/Chevstrap/total)
