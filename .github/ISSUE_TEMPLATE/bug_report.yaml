@@ -31,8 +31,8 @@ body:
         4. Observe the issue
 
   - type: input
-    id: exception
+    id: clone-app
     attributes:
-      label: Chevstrap Exception (if any)
-      description: If you're seeing a Chevstrap exception error, please upload your log file or describe the exception here. Leave blank if not applicable.
-      placeholder: "N/A"
+      label: Are you using a clone app?
+      description: If you're running Chevstrap inside a clone app, type the name here. If not, just leave it blank or write "N/A".
+      placeholder: "..."
