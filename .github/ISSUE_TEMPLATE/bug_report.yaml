@@ -27,10 +27,10 @@ body:
         2. Click on '...'
         3. Scroll down to '...'
         4. See error
-  - type: textarea
-    id: log
+  - type: input
+    id: expection
     attributes:
-      label: Fishstrap Log
-      description: If you're getting a Fishstrap Exception error, upload your log file here. Otherwise, just leave it empty.
+      label: Chevstrap Exception error
+      description: If you're getting a Chevstrap Exception error, upload your log file here. Otherwise, just leave it empty.
       value: "N/A"
       render: text
