@@ -1,36 +1,38 @@
 name: Bug Report
 title: "[BUG] "
-description: Report a problem you're having
+description: Report a problem you're experiencing with Chevstrap.
 body:
   - type: input
     id: version
     attributes:
       label: Chevstrap Version
-      description: "What version of Fishstrap are you using?"
-      placeholder: "v ..."
+      description: What version of Chevstrap are you using?
+      placeholder: "v..."
     validations:
       required: true
+
   - type: textarea
     id: what-happened
     attributes:
       label: What problem did you encounter?
-      description: Provide a comprehensive description of the problem you're facing. Don't forget to attach any additional resources you may have, such as log files and screenshots.
+      description: Provide a detailed description of the issue. Include any relevant logs, screenshots, or other supporting materials.
     validations:
       required: true
+
   - type: textarea
     id: repro-steps
     attributes:
-      label: How do you reproduce the problem?
-      description: Include the steps to reproduce the problem from start to finish. Include details such as FastFlags you added and settings you changed.
+      label: How can we reproduce the problem?
+      description: List all the steps needed to reproduce the issue. Mention any FastFlags or settings you modified.
       placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+        1. Open Chevstrap
+        2. Go to '...'
+        3. Click on '...'
+        4. Observe the issue
+
   - type: input
-    id: expection
+    id: exception
     attributes:
-      label: Chevstrap Exception error
-      description: If you're getting a Chevstrap Exception error, upload your log file here. Otherwise, just leave it empty.
-      value: "N/A"
-      render: text
+      label: Chevstrap Exception (if any)
+      description: If you're seeing a Chevstrap exception error, please upload your log file or describe the exception here. Leave blank if not applicable.
+      placeholder: "N/A"
