@@ -15,7 +15,7 @@ body:
     id: what-happened
     attributes:
       label: What problem did you encounter?
-      description: Provide a detailed description of the issue. Include any relevant logs, screenshots, or other supporting materials.
+      description: Provide a detailed description of the issue. Include any expection, screenshots.
     validations:
       required: true
 
