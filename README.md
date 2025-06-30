@@ -8,6 +8,8 @@
 ![GitHub Tag](https://img.shields.io/github/v/tag/FrosSky/Chevstrap)
 ![Discord](https://img.shields.io/discord/1351674799411302531)
 
+Chevstrap is a Roblox & Roblox VN launcher for Android, inspired by [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap).
+
 ----
 
 </div>
@@ -15,8 +17,6 @@
 > [!CAUTION]
 > The only official places to download Chevstrap is this GitHub repository. Any other websites offering downloads or claiming to be us are not controlled by us.
 
-# Chevstrap
-Chevstrap is a Roblox & Roblox VN launcher for Android, inspired by [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap).
 ## Features
 
 - Adjust specific FFlags for testing
