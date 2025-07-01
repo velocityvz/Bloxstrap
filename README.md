@@ -10,6 +10,9 @@
 
 Chevstrap is a Roblox & Roblox VN launcher for Android, inspired by [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap).
 
+Would you like to join our server?
+[Discord Server](https://discord.gg/rWkJ6Uh46U)
+
 ----
 
 </div>
@@ -45,9 +48,6 @@ A: No, it shouldn't. Chevstrap doesn't interact with the Roblox client and does 
 #### Q: Can you add Discord Rich Presence?
 
 A: It was planned from the beginning, but was canceled for safety reasons
-
-#### Q: Where to join discord server?
-A: Here's [Discord Server](https://discord.gg/rWkJ6Uh46U), but it may expired
 
 #### Q: "Roblox logs folder not found"
 A: That's mean no notification appear
