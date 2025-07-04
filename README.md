@@ -50,4 +50,4 @@ A: No, you shouldn’t. Chevstrap does not interact with the Roblox client in a 
 A: It was planned from the beginning, but was canceled for safety reasons
 
 #### Q: "Roblox logs folder not found"
-A: That's mean no notification appear
+A: That means no notification appeared.
