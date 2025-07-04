@@ -33,7 +33,7 @@ Would you like to join our server?
 3. Once installed, open Chevstrap and begin using it.
 
 ## Requirement
-- a Clone App (make sure it's trusted)
+- A Clone App (make sure it's trusted)
 
 ## F.A.Q
 
