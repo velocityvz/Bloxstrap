@@ -9,15 +9,14 @@ body:
         > Do **NOT** open an issue if you're getting a "No root access" or fallback-related error. Learn more [here](https://github.com/FrosSky/Chevstrap/wiki/No-root-access).
         > Always use the latest version, downloadable [here](https://github.com/FrosSky/Chevstrap/releases/latest).
 
-        ### 📌 Preliminary Instructions
+        ### Preliminary Instructions
         - Before opening an issue, please [check the Wiki](https://github.com/FrosSky/Chevstrap/wiki/) to see if your problem has already been addressed.
           - If it has **not**, mention which Wiki pages you read that seemed relevant.
           - Issues **will be closed without warning** if a Wiki page already addresses your problem.
         - If your issue involves **Roblox crashing or not launching**, [check this guide](https://github.com/FrosSky/Chevstrap/wiki/Roblox-Crash-&-Launch-Issues-(Android)).
           - Only report the issue **if it only occurs with Chevstrap**, and clearly state that.
         - Ensure you're using the **latest version** of Chevstrap. Reports based on outdated versions will not be supported.
-        - If more details are needed and you do not respond within 30 days, the issue will be marked as stale and closed.
-
+        
   - type: checkboxes
     id: terms
     attributes:
