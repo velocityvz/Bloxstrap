@@ -2,6 +2,20 @@ name: Bug Report
 title: "[BUG] "
 description: Report a problem you're experiencing with Chevstrap.
 body:
+- type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > Do NOT open an issue if you're getting an error saying "No root access", or fallback error so please learn more [here](https://github.com/FrosSky/Chevstrap/wiki/No-root-access)
+        > Download the latest version [here](https://github.com/FrosSky/Chevstrap/releases/latest).
+        ### **Preliminary instructions**
+        - Before opening an issue, please [check the Wiki first](https://github.com/FrosSky/Chevstrap/wiki/) to see if your problem has been addressed there.
+          - If it isn't, please confirm which pages that you read that were relevant to your issue.
+          - Your issue ***will*** be closed without warning if there's a Wiki page addressing your problem.
+        - If your problem is with Roblox itself (i.e. it crashes or doesn't launch), [check to see if it happens without Chevstrap](https://github.com/FrosSky/Chevstrap/wiki/Roblox-Crash-&-Launch-Issues-(Android)). 
+          - Please only open an issue if your problem happens only with Chevstrap, and state clearly that this is the case, as anything else is out of my control.
+        - Also, please ensure you are using the [latest version of Chevstrap](https://github.com/FrosSky/Chevstrap/releases/latest). Your report will be null and void if you are not.
+        - If more clarification on the issue is needed, and you don't respond after a month, then your issue will be closed as stale.
   - type: checkboxes
     id: terms
     attributes:
