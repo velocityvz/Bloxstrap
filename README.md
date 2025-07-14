@@ -39,7 +39,7 @@ Would you like to join our server?
 
 #### Q: Is this a malware?
 
-A: No, it's not a malware. The source code is viewable to all, so anyone can verify that it doesn’t do anything harmful. If anything was detected, that’s a false positive. Just make sure you’re downloading it from an official source.
+A: No, it's not a malware. The source code is viewable to all, so anyone can verify that it doesn’t do anything harmful. Just make sure you’re downloading it from an official source.
 
 #### Q: Can I get banned for using Chevstrap?
 
