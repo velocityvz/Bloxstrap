@@ -43,7 +43,7 @@ A: No, it's not a malware. The source code is viewable to all, so anyone can ver
 
 #### Q: Can I get banned for using Chevstrap?
 
-A: No, you shouldn’t. Chevstrap does not interact with the Roblox client in a way that could be considered exploitative.
+A: It shouldn't. Chevstrap does not interact with Roblox clients in a way that could be considered exploitative.
 
 #### Q: Can you add Discord Rich Presence?
 
