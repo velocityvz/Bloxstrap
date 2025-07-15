@@ -22,7 +22,7 @@ Would you like to join our server?
 
 ## Features
 
-- Adjust specific FFlags for testing
+- Ability to configure graphics fidelity and UI experience
 - See where your server is currently located (via [ipinfo.io](https://ipinfo.io/) API)
 - Able to rejoin your last server after leaving it (broken)
 
