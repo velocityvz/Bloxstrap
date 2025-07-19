@@ -8,29 +8,6 @@
 ![GitHub Tag](https://img.shields.io/github/v/tag/FrosSky/Chevstrap)
 ![Discord](https://img.shields.io/discord/1351674799411302531)
 
-
-
-
-
-
-
-
-
-
-[NOT WORKING TEMPORARILY]
-
-
-
-
-
-
-
-
-
-
-
-
-
 Chevstrap is a Roblox & Roblox VN launcher for Android, inspired by [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap).
 
 Would you like to join our server?
