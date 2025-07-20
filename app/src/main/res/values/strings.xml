@@ -30,7 +30,7 @@
     <string name="copy_server_link">Copy Server Link</string>
     <string name="rejoin">Rejoin</string>
     <string name="game_name">Game Name</string>
-    <string name="remove_blur_effect_on_roblox_gui">Remove blur effect on Roblox gui</string>
+    <string name="remove_blur_effect_on_roblox_gui">Remove blur effect on Roblox GUI</string>
     <string name="remove_blur_effect">Remove Blur Effect</string>
     <string name="sends_detailed_ping_information_to_the_roblox_console">Sends detailed ping information to the Roblox console</string>
     <string name="testing_debugs">Testing Debugs</string>
