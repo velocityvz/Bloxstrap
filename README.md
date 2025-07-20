@@ -34,6 +34,7 @@ Would you like to join our server?
 
 ## Requirement
 - A Clone App (make sure it's trusted)
+- A Roblox installed
 
 ## F.A.Q
 
