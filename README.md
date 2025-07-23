@@ -23,7 +23,7 @@ Would you like to join our server?
 ## Features
 
 - Ability to configure graphics fidelity and UI experience
-- See where your server is currently located (via [ipinfo.io](https://ipinfo.io/) API)
+- See where your server is currently located (via [ipinfo.io](https://ipinfo.io/) API) (Not working)
 - Able to rejoin your last server after leaving it (broken)
 
 ## Installation
