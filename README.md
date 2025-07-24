@@ -1,4 +1,4 @@
-<div align="center">
+p<div align="center">
 
 ![image](https://github.com/user-attachments/assets/7a83645e-9fd5-4571-b76a-609279a63ed1)
 ![image](https://github.com/user-attachments/assets/f88408b8-8274-4321-874c-eed349124e24)
@@ -22,7 +22,7 @@ Would you like to join our server?
 
 ## Features
 
-- Ability to configure graphics fidelity and UI experience
+- Ability to configure network, graphics fidelity, and UI experience.
 - See where your server is currently located (via [ipinfo.io](https://ipinfo.io/) API) (Not working)
 - Able to rejoin your last server after leaving it (broken)
 
