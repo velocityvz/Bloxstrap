@@ -28,7 +28,7 @@ Would you like to join our server?
 
 ## Installation
 
-1. Download the [latest release of Chevstrap](https://github.com/FrosSky/Chevstrap/releases).
+1. Download the [latest release of Chevstrap](https://github.com/FrosSky/Chevstrap/releases/latest).
 2. Install the APK on your Android device.
 3. Once installed, open Chevstrap and begin using it.
 
