@@ -3,12 +3,11 @@
 ![image](https://github.com/user-attachments/assets/7a83645e-9fd5-4571-b76a-609279a63ed1)
 ![image](https://github.com/user-attachments/assets/f88408b8-8274-4321-874c-eed349124e24)
 
-![Github Rep Stars](https://img.shields.io/github/stars/FrosSky/Chevstrap)
-![GitHub Tag](https://img.shields.io/github/v/tag/FrosSky/Chevstrap)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/FrosSky/Chevstrap/total)
 ![GitHub License](https://img.shields.io/github/license/FrosSky/Chevstrap)
 ![GitHub Tag](https://img.shields.io/github/v/tag/FrosSky/Chevstrap)
 ![Discord](https://img.shields.io/discord/1351674799411302531)
+![Github Rep Stars](https://img.shields.io/github/stars/FrosSky/Chevstrap)
 
 Chevstrap is an enhanced Roblox and Roblox VN launcher, built specifically for Android and inspired by [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap).
 
