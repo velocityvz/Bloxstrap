@@ -11,7 +11,7 @@
 
 Chevstrap is an enhanced Roblox and Roblox VN launcher, built specifically for Android and inspired by [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap).
 
-Would you like to join our server?
+Would you like to join our community server?
 [Discord Server](https://discord.gg/rWkJ6Uh46U)
 
 ----
@@ -54,3 +54,4 @@ A: It was planned from the beginning, but was canceled for safety reasons.
 
 #### Q: "Roblox logs folder not found"
 A: That means no notification appeared.
+
