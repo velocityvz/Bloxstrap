@@ -46,7 +46,7 @@ A: No, it's not a malware. The source code is viewable to all, so anyone can ver
 
 #### Q: Can I get banned for using Chevstrap?
 
-A: No, it shouldn't. Chevstrap doesn't interact with the Roblox client and does not modify roblox client
+A: No, it shouldn't. Chevstrap doesn't interact with the Roblox client and does not modify roblox client and ![learn more her](https://github.com/FrosSky/Chevstrap/wiki/Why-you-can't-get-banned-by-Chevstrap)
 
 #### Q: Can you add Discord Rich Presence?
 
@@ -54,4 +54,5 @@ A: It was planned from the beginning, but was canceled for safety reasons.
 
 #### Q: "Roblox logs folder not found"
 A: That means no notification appeared.
+
 
