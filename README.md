@@ -48,12 +48,16 @@ A: No, it's not a malware. The source code is viewable to all, so anyone can ver
 
 A: No. As long as you don’t exploit or use a modified Roblox client, and only use the native Roblox client from the [Google Play](https://play.google.com/store/apps/details?id=com.roblox.client), you should be fine. [learn more here](https://github.com/FrosSky/Chevstrap/wiki/Why-you-can't-get-banned-by-Chevstrap)
 
+#### Q: Fast Flags doesn’t load even though there are no errors?
+A: You may need restart your device.
+
 #### Q: Can you add Discord Rich Presence?
 
 A: It was planned from the beginning, but was canceled for safety reasons.
 
 #### Q: "Roblox logs folder not found"
 A: That means no notification appeared.
+
 
 
 
