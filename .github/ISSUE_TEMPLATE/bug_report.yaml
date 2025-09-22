@@ -59,8 +59,7 @@ body:
         4. Issue appears
 
   - type: input
-    id: clone-app
+    id: virtual-app
     attributes:
-      label: Are you using a clone app?
-      description: If you're running Chevstrap inside a clone app, name it here. Otherwise, write "N/A" or "No".
-      placeholder: "N/A"
+      label: Running in a virtual app?
+      description: If you’re running Chevstrap inside a virtual app, enter its name. Otherwise, type "N/A" or "No".
