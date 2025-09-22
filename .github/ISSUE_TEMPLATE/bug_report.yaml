@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         > [!IMPORTANT]
-        > Do **NOT** open an issue if you're getting a "No root access" or fallback-related error. Learn more [here](https://github.com/FrosSky/Chevstrap/wiki/No-root-access).
+        > Do **NOT** open an issue if you're getting a fallback-related error. Learn more [here](https://github.com/FrosSky/Chevstrap/wiki/Access-to-Roblox-directories-is-blocked).
         > Always use the latest version, downloadable [here](https://github.com/FrosSky/Chevstrap/releases/latest).
 
         ### Preliminary Instructions
