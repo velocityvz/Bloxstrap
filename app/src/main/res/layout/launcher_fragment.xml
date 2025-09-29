@@ -1,137 +1,126 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-	<ScrollView
-		android:id="@+id/vscroll1"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-		<LinearLayout
-			android:id="@+id/linear2"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:paddingLeft="8dp"
-			android:paddingRight="8dp"
-			android:paddingBottom="8dp"
-			android:background="@android:color/transparent"
-			android:orientation="vertical">
-			<TextView
-				android:id="@+id/textview1"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="15dp"
-				android:gravity="top"
-				android:text="@string/configure_what_chevstrap_should_do_when_launching_roblox"
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
-			<LinearLayout
-				android:id="@+id/linear_hey3"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="5dp"
-				android:layout_marginBottom="5dp"
-				android:paddingLeft="15dp"
-				android:paddingTop="5dp"
-				android:paddingRight="15dp"
-				android:paddingBottom="5dp"
-				android:background="#000000"
-				android:orientation="horizontal"
-				android:gravity="start|center_vertical"
-				android:paddingStart="0dp"
-				android:paddingEnd="13dp">
-				<LinearLayout
-					android:id="@+id/linear_info3"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:orientation="vertical"
-					android:gravity="start|top"
-					android:layout_marginEnd="10dp">
-					<TextView
-						android:id="@+id/textview_name_option3"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:layout_marginBottom="2dp"
-						android:text="@string/preferred_roblox_app"
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
-					<TextView
-						android:id="@+id/textview_iswhat3"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:text="@string/chosen_one_will_force_save_fast_flags_to_the_preferred_roblox_app_and_force_launch_preferred_roblox_app_but_only_if_needed"
-						android:textSize="11sp"
-						android:textColor="#E0E0E0" />
-				</LinearLayout>
-				<Spinner
-					android:id="@+id/spinner3"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:padding="5dp"
-					android:background="#263238"
-					android:spinnerMode="dropdown"
-					tools:listitem="@layout/custom_dropdown" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear_hey5"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="5dp"
-				android:layout_marginBottom="5dp"
-				android:paddingLeft="15dp"
-				android:paddingTop="5dp"
-				android:paddingRight="15dp"
-				android:paddingBottom="6dp"
-				android:background="#000000"
-				android:orientation="horizontal"
-				android:gravity="start|center_vertical"
-				android:paddingStart="0dp"
-				android:paddingEnd="13dp">
-				<LinearLayout
-					android:id="@+id/linear_info5"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:orientation="vertical"
-					android:gravity="start|top"
-					android:layout_marginEnd="10dp">
-					<TextView
-						android:id="@+id/textview_name_option5"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:layout_marginBottom="2dp"
-						android:text="@string/use_legacy_finder_path"
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
-					<TextView
-						android:id="@+id/textview_iswhat5"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:text="@string/replace_the_current_finder_path_with_the_legacy_finder_path"
-						android:textSize="11sp"
-						android:textColor="#E0E0E0" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear_of_toggle5"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:orientation="horizontal"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:paddingStart="0dp"
-					android:paddingEnd="15dp">
-					<ImageView
-						android:id="@+id/imageview_switch5"
-						android:layout_width="40dp"
-						android:layout_height="40dp"
-						android:background="@drawable/toggle_off"
-						android:src="@drawable/nothing80"
-						android:scaleType="center" />
-				</LinearLayout>
-			</LinearLayout>
-		</LinearLayout>
-	</ScrollView>
-</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+this is a standard settings screen layout.
+just a scrollable list of options.
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- the little description text at the top of the page -->
+        <TextView
+            android:id="@+id/textview_page_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/configure_what_bloxstrap_should_do_when_launching_roblox"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/textColorSecondary" />
+
+        <!--
+        this is a setting row for picking an option from a dropdown.
+        using a relative layout makes it easy to stick stuff on the left and right.
+        -->
+        <RelativeLayout
+            android:id="@+id/setting_preferred_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/spinner_preferred_app">
+
+                <!-- title text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preferred_roblox_app"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="?attr/textColorPrimary" />
+
+                <!-- description text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chosen_one_will_force_save_fast_flags_to_the_preferred_roblox_app_and_force_launch_preferred_roblox_app_but_only_if_needed"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?attr/textColorSecondary" />
+
+            </LinearLayout>
+
+            <!-- a real spinner now, no more ugly background color -->
+            <Spinner
+                android:id="@+id/spinner_preferred_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:minWidth="120dp"/>
+        </RelativeLayout>
+
+        <!-- divider line to keep things clean -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/dividerHorizontal"
+            android:layout_marginVertical="8dp"/>
+
+        <!--
+        and here's a setting row with a toggle switch.
+        ditched that old imageview for a real material switch. it's way better.
+        -->
+        <RelativeLayout
+            android:id="@+id/setting_legacy_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/switch_legacy_path">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_legacy_finder_path"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="?attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/replace_the_current_finder_path_with_the_legacy_finder_path"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?attr/textColorSecondary" />
+
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_legacy_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
