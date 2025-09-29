@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Chevstrap</string>
+    <string name="app_name">Bloxstrap</string>
     <string name="MessageOpenRbx">You may not be able to open Roblox through this</string>
     <string name="SaveText">Save</string>
     <string name="LearnMoreText">Learn More</string>
@@ -74,7 +74,7 @@
     <string name="if_it_s_enabled_it_required_refresh_the_page">if it\'s enabled, it required refresh the page</string>
     <string name="reset_everything_to_default">Reset everything to default</string>
     <string name="disabling_this_will_prevent_anything_configured_here_from_being_applied_to_roblox">Disabling this will prevent anything configured here from being applied to Roblox.</string>
-    <string name="allow_chevstrap_to_manage_fast_flags">Allow Chevstrap to manage Fast Flags</string>
+    <string name="allow_bloxstrap_to_manage_fast_flags">Allow Bloxstrap to manage Fast Flags</string>
     <string name="learn_more_about_fast_flags_what_these_presets_do_and_how_to_use_them">Learn more about Fast Flags, what these presets do, and how to use them.</string>
     <string name="help">Help</string>
     <string name="control_how_specific_roblox_engine_parameters_and_features_are_configured">Control how specific Roblox engine parameters and features are configured.</string>
@@ -85,9 +85,10 @@
     <string name="user_interface_and_layout">User interface and Layout</string>
     <string name="rendering_and_graphics">Rendering and Graphics</string>
     <string name="chosen_one_will_force_save_fast_flags_to_the_preferred_roblox_app_and_force_launch_preferred_roblox_app_but_only_if_needed">Chosen one will force save Fast Flags to the preferred Roblox app and force launch preferred Roblox app but only if needed</string>
+
     <string name="clearing_any_cache_on_roblox_before_launching_it">Clearing any cache on Roblox before launching it</string>
     <string name="preferred_roblox_app">Preferred Roblox app</string>
-    <string name="configure_what_chevstrap_should_do_when_launching_roblox">Configure what Chevstrap should do when launching Roblox.</string>
+    <string name="configure_what_bloxstrap_should_do_when_launching_roblox">Configure what Bloxstrap should do when launching Roblox.</string>
     <string name="chosen_text_by_game">Chosen by game</string>
     <string name="automatic">Automatic</string>
     <string name="yes">Yes</string>
@@ -95,14 +96,14 @@
     <string name="phase2_shadow_map">Shadow Map (Phase 2)</string>
     <string name="phase3_future">Future (Phase 3)</string>
     <string name="phase4_unified">Unified (Phase 4)</string>
-    <string name="fast_flags_editor">FFLags Editor</string>
-    <string name="fast_flags_settings">FFLags Settings</string>
+    <string name="fast_flags_editor">FFlags Editor</string>
+    <string name="fast_flags_settings">FFlags Settings</string>
     <string name="integrations">Integrations</string>
     <string name="save_and_launch">Save And Launch</string>
     <string name="close">Close</string>
     <string name="save">Save</string>
     <string name="launcher">Launcher</string>
-    <string name="chevstrap_settings">Chevstrap Settings</string>
+    <string name="bloxstrap_settings">Bloxstrap Settings</string>
     <string name="name">Name</string>
     <string name="value">Value</string>
     <string name="add_new">Add new</string>
@@ -113,7 +114,7 @@
     <string name="configure_additional_functionality_for_use_with_roblox">Configure additional functionality for use with Roblox.</string>
     <string name="activity_tracking">Activity tracking</string>
     <string name="enable_activity_tracking">Enable activity tracking</string>
-    <string name="allows_for_chevstrap_to_detect_what_roblox_games_you_re_playing_certain_features_may_require_this">Allows for Chevstrap to detect what Roblox games you\'re playing. Certain features may require this.</string>
+    <string name="allows_for_bloxstrap_to_detect_what_roblox_games_you_re_playing_certain_features_may_require_this">Allows for Bloxstrap to detect what Roblox games you\'re playing. Certain features may require this.</string>
     <string name="when_in_game_you_ll_be_able_to_see_where_your_server_is_located_via_ipinfo_io">When in-game, you\'ll be able to see where your server is located via ipinfo.io.</string>
     <string name="query_server_location">Query server location</string>
     <string name="without_these_people_this_app_probably_wouldn_t_exist">Without these people, this app probably wouldn\'t exist</string>
