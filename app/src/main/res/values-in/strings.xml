@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Chevstrap</string>
+    <string name="app_name">Bloxstrap</string>
 
     <string name="MessageOpenRbx">Anda mungkin tidak dapat membuka Roblox melalui ini</string>
     <string name="SaveText">Simpan</string>
@@ -75,7 +75,7 @@
     <string name="if_it_s_enabled_it_required_refresh_the_page">Jika diaktifkan, perlu menyegarkan halaman</string>
     <string name="reset_everything_to_default">Setel ulang semua ke default</string>
     <string name="disabling_this_will_prevent_anything_configured_here_from_being_applied_to_roblox">Menonaktifkan ini akan mencegah semua konfigurasi diterapkan ke Roblox</string>
-    <string name="allow_chevstrap_to_manage_fast_flags">Izinkan Chevstrap mengelola Fast Flags</string>
+    <string name="allow_bloxstrap_to_manage_fast_flags">Izinkan Bloxstrap mengelola Fast Flags</string>
     <string name="learn_more_about_fast_flags_what_these_presets_do_and_how_to_use_them">Pelajari lebih lanjut tentang Fast Flags, apa fungsinya, dan cara menggunakannya</string>
     <string name="help">Bantuan</string>
     <string name="control_how_specific_roblox_engine_parameters_and_features_are_configured">Kontrol cara konfigurasi fitur dan parameter engine Roblox</string>
@@ -88,7 +88,7 @@
     <string name="chosen_one_will_force_save_fast_flags_to_the_preferred_roblox_app_and_force_launch_preferred_roblox_app_but_only_if_needed">Yang dipilih akan memaksa menyimpan Fast Flags ke aplikasi Roblox pilihan dan meluncurkannya jika diperlukan</string>
     <string name="clearing_any_cache_on_roblox_before_launching_it">Bersihkan cache Roblox sebelum diluncurkan</string>
     <string name="preferred_roblox_app">Aplikasi Roblox yang Dipilih</string>
-    <string name="configure_what_chevstrap_should_do_when_launching_roblox">Konfigurasikan tindakan Chevstrap saat membuka Roblox</string>
+    <string name="configure_what_bloxstrap_should_do_when_launching_roblox">Konfigurasikan tindakan Bloxstrap saat membuka Roblox</string>
     <string name="chosen_text_by_game">Dipilih oleh game</string>
     <string name="automatic">Otomatis</string>
     <string name="yes">Ya</string>
@@ -103,7 +103,7 @@
     <string name="close">Tutup</string>
     <string name="save">Simpan</string>
     <string name="launcher">Peluncur</string>
-    <string name="chevstrap_settings">Pengaturan Chevstrap</string>
+    <string name="bloxstrap_settings">Pengaturan Bloxstrap</string>
     <string name="name">Nama</string>
     <string name="value">Nilai</string>
     <string name="add_new">Tambah Baru</string>
@@ -114,10 +114,9 @@
     <string name="configure_additional_functionality_for_use_with_roblox">Konfigurasikan fungsionalitas tambahan untuk digunakan dengan Roblox</string>
     <string name="activity_tracking">Pelacakan Aktivitas</string>
     <string name="enable_activity_tracking">Aktifkan Pelacakan Aktivitas</string>
-    <string name="allows_for_chevstrap_to_detect_what_roblox_games_you_re_playing_certain_features_may_require_this">Izinkan Chevstrap mendeteksi game Roblox yang Anda mainkan. Beberapa fitur mungkin membutuhkannya</string>
+    <string name="allows_for_bloxstrap_to_detect_what_roblox_games_you_re_playing_certain_features_may_require_this">Izinkan Bloxstrap mendeteksi game Roblox yang Anda mainkan. Beberapa fitur mungkin membutuhkannya</string>
     <string name="when_in_game_you_ll_be_able_to_see_where_your_server_is_located_via_ipinfo_io">Saat dalam game, Anda dapat melihat lokasi server melalui ipinfo.io</string>
     <string name="query_server_location">Periksa Lokasi Server</string>
     <string name="without_these_people_this_app_probably_wouldn_t_exist">Tanpa orang-orang ini, aplikasi ini mungkin tidak akan ada</string>
     <string name="license">Lisensi</string>
 </resources>
-
