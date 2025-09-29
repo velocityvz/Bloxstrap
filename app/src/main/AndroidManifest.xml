@@ -1,14 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="com.chevstrap.rbx">
+	package="com.bloxstrap.client">
 
-	<!-- Visibility for specific apps (Android 11+) -->
+	<!-- lets us see if roblox is installed -->
 	<queries>
 		<package android:name="com.roblox.client" />
 		<package android:name="com.roblox.client.vnggames" />
 	</queries>
 
-	<!-- Permissions -->
+	<!-- all the permissions our app needs -->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
@@ -29,7 +29,7 @@
 		android:usesCleartextTraffic="true"
 		android:theme="@style/AppTheme">
 
-		<!-- Main Activity -->
+		<!-- this is the first screen you see -->
 		<activity
 			android:name=".MainActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -44,7 +44,7 @@
 			</intent-filter>
 		</activity>
 
-		<!-- Other Activities -->
+		<!-- the settings screen -->
 		<activity
 			android:name=".SettingsActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -53,7 +53,7 @@
 			android:theme="@style/AppTheme.FullScreen"
 			android:windowSoftInputMode="stateHidden" />
 
-		<!-- Optional Apache HTTP Legacy Library -->
+		<!-- some old http stuff, just in case -->
 		<uses-library
 			android:name="org.apache.http.legacy"
 			android:required="false" />
