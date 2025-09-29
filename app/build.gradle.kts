@@ -3,11 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.chevstrap.rbx"
+    // this is the main app package
+    namespace = "com.bloxstrap.client"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.chevstrap.rbx"
+        // this needs to match the namespace
+        applicationId = "com.bloxstrap.client"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -32,6 +34,7 @@ android {
 
     }
     buildFeatures {
+        // this lets us use viewbinding, its pretty neat
         viewBinding = true
     }
 }
