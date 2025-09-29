@@ -1,59 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+this is the layout for one single row in the fastflags list.
+i'm using a linearlayout with weights so the columns resize nicely.
+-->
 <LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-	<LinearLayout
-		android:id="@+id/linear4"
-		android:layout_width="match_parent"
-		android:layout_height="35dp"
-		android:background="@android:color/transparent"
-		android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:background="?attr/selectableItemBackground">
 
-		<LinearLayout
-			android:id="@+id/linear1"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:background="@android:color/transparent"
-			android:gravity="center_vertical"
-			android:orientation="horizontal">
+        <!-- the flag name on the left -->
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/textColorPrimary"
+            tools:text="FFlagHandleAltEnterFullscreenManually" />
 
-			<TextView
-				android:id="@+id/textview_name"
-				android:focusable="false"
-				android:layout_width="350dp"
-				android:layout_height="match_parent"
-				android:gravity="center_vertical"
-				android:paddingStart="5dp"
-				android:paddingEnd="0dp"
-				android:text=""
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
+        <!-- the flag value on the right -->
+        <TextView
+            android:id="@+id/textview_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/textColorSecondary"
+            tools:text="False" />
+    </LinearLayout>
 
-			<TextView
-				android:id="@+id/textview_value"
-				android:focusable="false"
-				android:layout_width="0dp"
-				android:layout_height="match_parent"
-				android:layout_weight="1"
-				android:gravity="center_vertical"
-				android:paddingStart="5dp"
-				android:paddingEnd="0dp"
-				android:text=""
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
-		</LinearLayout>
-	</LinearLayout>
+    <!-- just a simple line to separate the list items -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/dividerHorizontal" />
 
-	<LinearLayout
-		android:id="@+id/linear_hehe"
-		android:layout_width="match_parent"
-		android:layout_height="1.2dp"
-		android:padding="8dp"
-		android:background="#3B4550"
-		android:gravity="bottom"
-		android:orientation="horizontal" />
 </LinearLayout>
