@@ -1,82 +1,68 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-	<LinearLayout
-		android:id="@+id/linear1"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:padding="5dp"
-		android:background="#050D1A"
-		android:orientation="vertical">
-		<LinearLayout
-			android:id="@+id/linear3"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="2dp"
-			android:orientation="horizontal">
-			<TextView
-				android:id="@+id/textview1"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="1dp"
-				android:text="Chevstrap"
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
-			<LinearLayout
-				android:id="@+id/linear5"
-				android:layout_width="355dp"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:orientation="vertical" />
-		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear6"
-			android:layout_width="match_parent"
-			android:layout_height="100dp"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
-			<TextView
-				android:id="@+id/textview3"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text=""
-				android:textSize="14sp"
-				android:textColor="#FFFFFF" />
-		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear2"
-			android:layout_width="match_parent"
-			android:layout_height="45dp"
-			android:padding="5dp"
-			android:background="#00070E"
-			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
-			<Button
-				android:id="@+id/button_ok"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginEnd="5dp"
-				android:padding="8dp"
-				android:background="#000000"
-				android:text="@string/yes"
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
-			<Button
-				android:id="@+id/button_cancel"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginStart="5dp"
-				android:padding="8dp"
-				android:background="#000000"
-				android:text="@string/cancel"
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
-		</LinearLayout>
-	</LinearLayout>
-</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+this is a modern layout for a dialog box.
+it uses a cardview for the nice rounded corners and shadow.
+-->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="?attr/colorSurface"> <!-- uses the dark gray from our theme -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- the title of the dialog -->
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="?attr/colorOnSurface" />
+
+        <!-- the main message text of the dialog -->
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Your message goes here."
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/colorOnSurface" />
+
+        <!-- container for the action buttons at the bottom -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!--
+            these are real material buttons now.
+            they'll get styled automatically by our theme.
+            -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_cancel"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/cancel" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                app:backgroundTint="?attr/colorAccent" /> <!-- this makes it purple! -->
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
