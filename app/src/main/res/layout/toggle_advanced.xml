@@ -1,64 +1,51 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
+<!-- this is a reusable row for a setting with a toggle switch -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground">
 
-			<LinearLayout
-				android:id="@+id/linear_hey"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="5dp"
-				android:layout_marginBottom="5dp"
-				android:paddingLeft="15dp"
-				android:paddingTop="5dp"
-				android:paddingRight="15dp"
-				android:paddingBottom="6dp"
-				android:background="#000000"
-				android:orientation="horizontal"
-				android:gravity="start|center_vertical"
-				android:paddingStart="0dp"
-				android:paddingEnd="13dp">
-				<LinearLayout
-					android:id="@+id/linear_info"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:orientation="vertical"
-					android:gravity="start|top"
-					android:layout_marginEnd="10dp">
-					<TextView
-						android:id="@+id/textview_name_option"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:layout_marginBottom="2dp"
-						android:text=""
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
-					<TextView
-						android:id="@+id/textview_iswhat5"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:text=""
-						android:textSize="11sp"
-						android:textColor="#E0E0E0" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear_of_toggle"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:orientation="horizontal"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:paddingStart="0dp"
-					android:paddingEnd="15dp">
-					<ImageView
-						android:id="@+id/imageview_switch"
-						android:layout_width="40dp"
-						android:layout_height="40dp"
-						android:background="@drawable/toggle_off"
-						android:src="@drawable/nothing80"
-						android:scaleType="center" />
-				</LinearLayout>
-			</LinearLayout>
-</LinearLayout>
+    <!-- holds the title and description -->
+    <LinearLayout
+        android:id="@+id/linear_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/setting_switch">
+
+        <!-- the title of the setting -->
+        <TextView
+            android:id="@+id/textview_name_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting Title"
+            android:textSize="16sp"
+            android:textColor="?attr/textColorPrimary" />
+
+        <!-- the description of the setting -->
+        <TextView
+            android:id="@+id/textview_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A short description"
+            android:textSize="14sp"
+            android:textColor="?attr/textColorSecondary" />
+
+    </LinearLayout>
+
+    <!--
+    replaced the old imageview with a proper material switch,
+    it uses our purple accent color automatically!
+    -->
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/setting_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>
