@@ -1,89 +1,81 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-	<LinearLayout
-		android:id="@+id/linear_background"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:padding="8dp"
-		android:background="@drawable/background_loading"
-		android:gravity="bottom"
-		android:orientation="horizontal">
-		<LinearLayout
-			android:id="@+id/linear2"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="3dp"
-			android:gravity="center_vertical"
-			android:background="@android:color/transparent"
-			android:orientation="horizontal">
-			<ImageView
-				android:id="@+id/imageview_logo"
-				android:layout_width="40dp"
-				android:layout_height="40dp"
-				android:layout_marginEnd="10dp"
-				android:layout_marginStart="5dp"
-				android:src="@drawable/nothing80"
-				android:background="@drawable/chevstrap_logo"
-				android:scaleType="center" />
-			<LinearLayout
-				android:id="@+id/linear4"
-				android:layout_width="255dp"
-				android:layout_height="50dp"
-				android:padding="2dp"
-				android:background="@android:color/transparent"
-				android:gravity="start"
-				android:orientation="vertical">
-				<TextView
-					android:id="@+id/textview_taskcurrently"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:text=""
-					android:textSize="16sp"
-					android:textStyle="bold"
-					android:textColor="#FFFFFF" />
-				<TextView
-					android:id="@+id/textview_loadingstatus"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:text=""
-					android:textSize="12sp"
-					android:textColor="#F5F5F5" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear5"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:padding="0dp"
-				android:gravity="center"
-				android:orientation="horizontal">
-				<LinearLayout
-					android:id="@+id/button_cancel"
-					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:padding="0dp"
-					android:background="#000000"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal">
-					<TextView
-						android:id="@+id/textview1"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:layout_marginLeft="10dp"
-						android:layout_marginTop="0dp"
-						android:layout_marginRight="10dp"
-						android:layout_marginBottom="0dp"
-						android:text="@string/cancel"
-						android:textSize="16sp"
-						android:textColor="#FFFFFF" />
-				</LinearLayout>
-			</LinearLayout>
-		</LinearLayout>
-	</LinearLayout>
-</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+this thing holds the whole loading bar view.
+decided to use a relative layout, it's just easier for this kinda stuff.
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:padding="16dp">
+
+    <!-- i added a real progress bar at the top, looks way cooler -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_alignParentTop="true"
+        app:indicatorColor="?attr/colorAccent"
+        app:trackColor="?attr/colorPrimaryVariant" />
+
+    <!-- just the bloxstrap logo -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/progress_indicator"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_bloxstrap_logo_small" />
+
+    <!-- this linear layout just keeps the two text lines together -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_indicator"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/logo_image"
+        android:layout_toStartOf="@+id/cancel_button"
+        android:orientation="vertical">
+
+        <!-- the main text, like "applying flags" or whatever -->
+        <TextView
+            android:id="@+id/textview_taskcurrently"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textColor="?attr/colorOnPrimary"
+            tools:text="Applying FastFlags..." />
+
+        <!-- the smaller text below it for more deets -->
+        <TextView
+            android:id="@+id/textview_loadingstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/colorOnPrimary"
+            android:alpha="0.7"
+            tools:text="Please wait a moment" />
+    </LinearLayout>
+
+    <!--
+    a real button now, not that weird linear layout thing.
+    the style makes it just text so it's not too in-your-face.
+    -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_indicator"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/cancel" />
+
+</RelativeLayout>
