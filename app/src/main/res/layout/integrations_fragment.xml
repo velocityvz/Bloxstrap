@@ -1,157 +1,133 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-	<ScrollView
-		android:id="@+id/vscroll1"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-		<LinearLayout
-			android:id="@+id/linear2"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:paddingLeft="8dp"
-			android:paddingRight="8dp"
-			android:paddingBottom="8dp"
-			android:background="@android:color/transparent"
-			android:orientation="vertical">
-			<TextView
-				android:id="@+id/textview1"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="15dp"
-				android:gravity="top"
-				android:text="@string/configure_additional_functionality_for_use_with_roblox"
-				android:textSize="12sp"
-				android:textColor="#FFFFFF" />
-			<TextView
-				android:id="@+id/typecategory_textview4"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="10dp"
-				android:layout_marginEnd="10dp"
-				android:layout_marginBottom="5dp"
-				android:text="@string/activity_tracking"
-				android:textSize="14sp"
-				android:textStyle="bold"
-				android:textColor="#FFFFFF" />
-			<LinearLayout
-				android:id="@+id/linear_hey1"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="5dp"
-				android:layout_marginBottom="5dp"
-				android:paddingLeft="15dp"
-				android:paddingTop="5dp"
-				android:paddingRight="15dp"
-				android:paddingBottom="5dp"
-				android:background="#000000"
-				android:orientation="horizontal"
-				android:gravity="start|center_vertical"
-				android:paddingStart="0dp"
-				android:paddingEnd="13dp">
-				<LinearLayout
-					android:id="@+id/linear_info4"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:orientation="vertical"
-					android:gravity="start|top"
-					android:layout_marginEnd="10dp">
-					<TextView
-						android:id="@+id/textview_name_option4"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:layout_marginBottom="2dp"
-						android:text="@string/enable_activity_tracking"
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
-					<TextView
-						android:id="@+id/textview_iswhat4"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:text="@string/allows_for_chevstrap_to_detect_what_roblox_games_you_re_playing_certain_features_may_require_this"
-						android:textSize="11sp"
-						android:textColor="#E0E0E0" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear_of_toggle4"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:orientation="horizontal"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:paddingStart="0dp"
-					android:paddingEnd="15dp">
-					<ImageView
-						android:id="@+id/imageview_switch1"
-						android:layout_width="40dp"
-						android:layout_height="40dp"
-						android:background="@drawable/toggle_off"
-						android:src="@drawable/nothing80"
-						android:scaleType="center" />
-				</LinearLayout>
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear_hey2"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="5dp"
-				android:layout_marginBottom="5dp"
-				android:paddingLeft="15dp"
-				android:paddingTop="5dp"
-				android:paddingRight="15dp"
-				android:paddingBottom="5dp"
-				android:background="#000000"
-				android:orientation="horizontal"
-				android:gravity="start|center_vertical"
-				android:paddingStart="0dp"
-				android:paddingEnd="13dp">
-				<LinearLayout
-					android:id="@+id/linear_info5"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:orientation="vertical"
-					android:gravity="start|top"
-					android:layout_marginEnd="10dp">
-					<TextView
-						android:id="@+id/textview_name_option5"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:layout_marginBottom="2dp"
-						android:text="@string/query_server_location"
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
-					<TextView
-						android:id="@+id/textview_iswhat5"
-						android:layout_width="150dp"
-						android:layout_height="wrap_content"
-						android:text="@string/when_in_game_you_ll_be_able_to_see_where_your_server_is_located_via_ipinfo_io"
-						android:textSize="11sp"
-						android:textColor="#E0E0E0" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear_of_toggle5"
-					android:layout_width="0dp"
-					android:layout_height="wrap_content"
-					android:orientation="horizontal"
-					android:layout_weight="1"
-					android:gravity="end"
-					android:paddingStart="0dp"
-					android:paddingEnd="15dp">
-					<ImageView
-						android:id="@+id/imageview_switch2"
-						android:layout_width="40dp"
-						android:layout_height="40dp"
-						android:background="@drawable/toggle_off"
-						android:src="@drawable/nothing80"
-						android:scaleType="center" />
-				</LinearLayout>
-			</LinearLayout>
-		</LinearLayout>
-	</ScrollView>
-</LinearLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+this is the integrations settings screen.
+just a simple scrollable list.
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- the description text at the top -->
+        <TextView
+            android:id="@+id/textview_page_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/configure_additional_functionality_for_use_with_roblox"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/textColorSecondary" />
+
+        <!--
+        this is a category header, like for "activity tracking".
+        i used the accent color to make it pop a little.
+        -->
+        <TextView
+            android:id="@+id/header_activity_tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_tracking"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textColor="?attr/colorAccent"
+            android:textStyle="bold"/>
+
+        <!-- divider line to keep things clean -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/dividerHorizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!--
+        rebuilt the settings rows to use our standard style.
+        text on the left, a real switch on the right. simple.
+        -->
+        <RelativeLayout
+            android:id="@+id/setting_enable_tracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/switch_enable_tracking">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_activity_tracking"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="?attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allows_for_bloxstrap_to_detect_what_roblox_games_you_re_playing_certain_features_may_require_this"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?attr/textColorSecondary" />
+
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_enable_tracking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_query_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/switch_query_location">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query_server_location"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="?attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/when_in_game_you_ll_be_able_to_see_where_your_server_is_located_via_ipinfo_io"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?attr/textColorSecondary" />
+
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_query_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
