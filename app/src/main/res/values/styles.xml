@@ -1,32 +1,25 @@
 <resources>
-	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+	<!-- this is our main app theme, everything is based on this -->
+	<style name="Theme.Bloxstrap" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<!--
+		hey, make sure to change the colors in your colors.xml file!
+		colorPrimary should probably be your dark gray for app bars.
+		colorAccent should be that cool purple for buttons and toggles.
+		-->
 		<item name="colorPrimary">@color/colorPrimary</item>
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
-		<item name="colorControlHighlight">@color/colorControlHighlight</item>
-		<item name="colorControlNormal">@color/colorControlNormal</item>
+
+		<!-- this sets the main background color for all screens -->
+		<item name="android:windowBackground">@color/window_background</item>
+
+		<!-- this makes the status bar at the top match our theme -->
+		<item name="android:statusBarColor">@color/colorPrimaryDark</item>
 	</style>
 
-	<style name="AppTheme.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
-		<item name="android:windowFullscreen">true</item>
-		<item name="colorPrimary">@color/colorPrimary</item>
-		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-		<item name="colorAccent">@color/colorAccent</item>
-		<item name="colorControlHighlight">@color/colorControlHighlight</item>
-		<item name="colorControlNormal">@color/colorControlNormal</item>
-	</style>
-
-	<style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-		<item name="colorPrimary">@color/colorPrimary</item>
-		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-		<item name="colorAccent">@color/colorAccent</item>
-		<item name="colorControlHighlight">@color/colorControlHighlight</item>
-		<item name="colorControlNormal">@color/colorControlNormal</item>
-	</style>
-
-	<style name="AppTheme.NoStatusBar" parent="AppTheme">
+	<!-- a version of our theme that hides the status bar -->
+	<style name="Theme.Bloxstrap.FullScreen" parent="Theme.Bloxstrap">
 		<item name="android:windowFullscreen">true</item>
 	</style>
 
-	<style name="AppTheme.DebugActivity" parent="AppTheme" />
 </resources>
