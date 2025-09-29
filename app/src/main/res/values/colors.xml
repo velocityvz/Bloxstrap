@@ -1,14 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="colorPrimary">#009688</color>
-	<color name="colorPrimaryDark">#009688</color>
-	<color name="colorAccent">#009688</color>
-	<color name="colorControlHighlight">#B2DFDB</color>
-	<color name="colorControlNormal">#009688</color>
-	<color name="purple_200">#BB86FC</color>
-	<color name="purple_500">#6200EE</color>
-	<color name="purple_700">#3700B3</color>
-	<color name="teal_200">#03DAC5</color>
-	<color name="teal_700">#018786</color>
-	<color name="black">#000000</color>
-	<color name="white">#FFFFFF</color>
+    <!-- main app bar color -->
+    <color name="colorPrimary">#2C2C2C</color>
+
+    <!-- status bar color (the bar at the very top of the phone) -->
+    <color name="colorPrimaryDark">#1E1E1E</color>
+
+    <!-- this is our main accent color, the cool purple! -->
+    <color name="colorAccent">#8A2BE2</color>
+
+    <!-- the color for the ripple effect when you tap stuff -->
+    <color name="colorControlHighlight">#408A2BE2</color>
+
+    <!-- color for things like unchecked boxes -->
+    <color name="colorControlNormal">#BDBDBD</color>
+
+    <!-- our main app background color, needs to be set in the theme -->
+    <color name="window_background">#1E1E1E</color>
+
+    <!-- just plain black and white -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- for delete buttons and stuff -->
+    <color name="red_destructive">#F44336</color>
 </resources>
