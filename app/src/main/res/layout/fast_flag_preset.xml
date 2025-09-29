@@ -1,34 +1,48 @@
+<?xml version="1.- encoding="utf-8"?>
+<!--
+another list item layout, probably for the preset flags.
+i'm using the same weighted layout as before so it's nice and flexible.
+-->
 <LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical">
-	<LinearLayout
-		android:id="@+id/linear1"
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:padding="8dp"
-		android:orientation="horizontal">
-		<TextView
-			android:id="@+id/textview_name"
-			android:focusable="false"
-			android:layout_width="350dp"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="TextView"
-			android:textSize="12sp"
-			android:textColor="#FFFFFF" />
-		<TextView
-			android:id="@+id/textview_value"
-			android:focusable="false"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:text="TextView"
-			android:textSize="12sp"
-			android:textColor="#FFFFFF"
-			android:layout_weight="1" />
-	</LinearLayout>
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:background="?attr/selectableItemBackground">
+
+        <!-- the name column, it gets 2/3 of the space -->
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/textColorPrimary"
+            tools:text="FFlagExampleName" />
+
+        <!-- the value column, it gets the last 1/3 -->
+        <TextView
+            android:id="@+id/textview_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/textColorSecondary"
+            tools:text="True" />
+    </LinearLayout>
+
+    <!-- a simple line to separate the list items -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/dividerHorizontal" />
+
 </LinearLayout>
