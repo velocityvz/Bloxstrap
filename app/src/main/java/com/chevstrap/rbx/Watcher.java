@@ -1,22 +1,25 @@
-package com.chevstrap.rbx;
+package com.bloxstrap.client;
 
-import static com.chevstrap.rbx.Utility.INeedPath.getRBXPathDir;
+import static com.bloxstrap.client.Utility.INeedPath.getRBXPathDir;
 
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.chevstrap.rbx.Integrations.ActivityWatcher;
-import com.chevstrap.rbx.Utility.AppCheckerListener;
+import com.bloxstrap.client.Integrations.ActivityWatcher;
+import com.bloxstrap.client.Utility.AppCheckerListener;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+// okay so this class is basically a little spy, it watches for when roblox opens and closes!
 public class Watcher {
     private static Watcher currentInstance;
     private ExecutorService RBXActivityWatcher;
     private AppCheckerListener checker;
+
     public void run(Context context) {
+        // if we already have a watcher running, we should probably stop it first, lol
         if (currentInstance != null) {
             currentInstance.stop();
         }
@@ -27,12 +30,13 @@ public class Watcher {
             public void onAppStarted() {
                 FFlagsSettingsManager manager = new FFlagsSettingsManager(context);
 
+                // make sure the settings are actually enabled before we do anything
                 boolean getSetting1 = Boolean.parseBoolean(manager.getSetting("EnableActivityTracking"));
                 boolean getSetting2 = Boolean.parseBoolean(manager.getSetting("ShowServerDetails"));
 
                 if (!getSetting1 || !getSetting2) return;
 
-                stopExecutorService(); // Ensure previous executor is stopped
+                stopExecutorService(); // gotta stop the old one just in case!
 
                 RBXActivityWatcher = Executors.newSingleThreadExecutor();
                 String target = FFlagsSettingsManager.getPackageTarget(context);
@@ -43,15 +47,17 @@ public class Watcher {
                     return;
                 }
 
+                // time to start watching the roblox logs hehe
                 ActivityWatcher watcher = new ActivityWatcher(context, rbxpath.concat("appData/logs"), RBXActivityWatcher);
                 RBXActivityWatcher.submit(watcher::start);
-                Log.d("AppChecker", "Roblox has started.");
+                Log.d("AppChecker", "roblox started, watching now...");
             }
 
             @Override
             public void onAppStopped() {
+                // roblox closed, so we can just chill and stop watching
                 stopExecutorService();
-                Log.d("AppChecker", "Roblox has stopped.");
+                Log.d("AppChecker", "roblox stopped.");
             }
         });
 
@@ -60,7 +66,7 @@ public class Watcher {
 
     private void stop() {
         if (checker != null) {
-            checker.stop(); // You need to implement this in AppCheckerListener if not already
+            checker.stop();
         }
         stopExecutorService();
     }
